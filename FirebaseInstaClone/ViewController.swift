@@ -16,10 +16,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        let keyboardGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(keyboardGestureRecognizer)
+    
+    
         
         
     }
+
+
+@objc func hideKeyboard(){
+    view.endEditing(true)
+}
 
 
     @IBAction func signInClicked(_ sender: Any) {
