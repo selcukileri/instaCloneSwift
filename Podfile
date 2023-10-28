@@ -9,8 +9,11 @@ pod 'FirebaseAnalytics'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
 pod 'FirebaseStorage'
-pod 'Firebase'	
+pod 'Firebase'
+platform :ios, '17.0'
+pod 'SDWebImage', '~> 5.0'
 
   # Pods for FirebaseInstaClone
 
 end
+
